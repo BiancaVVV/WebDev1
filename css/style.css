@@ -1,0 +1,556 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+} 
+  
+ header{
+ 	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../3/q1.jpg);
+ 	height: 100vh;
+ 	background-size: cover;
+ 	background-position: center;
+ 	min-height: 100vh;
+ }
+ nav{
+ 	width: 100%;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	padding: 0 70px;
+ 	background-color: rgba(0,0,0,0.0);
+ 	line-height: 10px;
+ 	position: fixed;
+ 	z-index: 2;
+ }
+ ul{ 
+ 	float: right;
+ 	list-style-type: none;
+ 	margin-top: 0;
+ }
+ ul li{
+ 	display: inline-block;
+ }
+ ul li a{
+ 	text-decoration: none;
+ 	color:#FFFFF0;
+ 	padding: 5px 20px;
+ 	border: 1px solid transparent;
+ 	transition: 0.6s ease;
+ }
+ ul li a:hover{
+ 	background-color: #fff;
+ 	color: #000;
+ }
+ ul li.active a{
+ 	background-color: #fff;
+ 	color: #000;
+ }
+ .logo img{
+ 	float: left;
+ 	width: 90px;
+ 	height: 90px;
+ }
+
+ .main{
+ 	max-width: 1200px;
+ 	margin: auto;
+ }
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.title h1{
+	color: #FFFFF0;
+	font-size:60px;
+font-family: 'Sue Ellen Francisco', cursive;}
+.button{
+	position: absolute;
+	top: 62%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.5% ease;
+}
+.btn:hover{
+	background-color: white;
+ 	color: #000;
+
+}
+.Contact{
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.Galery{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.Services{
+	position: absolute;
+	top: 50%;
+	left:  50%;
+	transform: translate(-50%, -50%);
+}
+.nav-container{
+	width: 100px;
+	margin: 0 auto;
+	position: relative;
+}
+.menu{
+	width: 90%;
+	height: 65px;
+	background: transparent;
+}
+.menu>.menu-container{
+	width: 100px;
+	height: 65px;
+	float: 10px;
+	font-family: sans-serif,Arial;
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: -0.05em
+	position: relative;
+}
+.menu>.menu-container>a{
+	color: black;
+	text-decoration: none;
+}
+.arrow-up
+	{width:0;
+	height: 0;
+	position: absolute;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #87CEEB;
+    right: 260px;
+    top: 80px;
+    display: none ;
+}
+.login-form{
+	line-height: 20px;
+	position: absolute;
+	width: 270px;
+	height: 210px;
+	background: #87CEEB;
+	right:120px;
+	border-radius: 2em;
+	border-left-width: : 120px;
+	top: 100px;
+	display: none;
+}
+input[type="text"],
+input[type="password"]{
+	width: 100px;
+	height: 90px;
+}
+.login-form>form{
+	width: 250px;
+	margin: 25px auto;
+    font-size: 20px;
+    font-family:  sans-serif,Arial;
+    color: gray;
+    letter-spacing: -0.05em;
+}
+input[type="text"],
+input[type="password"]{
+	width: 200px;
+	height: 20px;
+	border: 0px;
+	outline: none;
+	box-shadow: inset 0 0 8px #87CEEB;
+	border-radius: 9px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-family: sans-serif,Arial;
+	font-size: 16px;
+}
+input[type="submit"]{
+	width: 24%;
+	height: 28px;
+	background: #AFEEEE;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: sans-serif,Arial;
+	color: gray;
+}
+input[type="submit"]:hover{
+	background: #40E0D0;
+}
+.fa{
+	margin-right: 5px;
+}
+header h1{
+	color: white;
+	text-transform: uppercase;
+}
+header span{
+	width: 100px;
+	height: 5px;
+	background-color: white;
+	display: block;
+	text-align: center;
+	margin: 15px auto;
+}
+.box1{
+	position: relative;
+	overflow: hidden;
+	font-family: 'Lato',sans-serif;
+	text-align: center;
+}
+.box1:before{
+	content: '';
+	position: absolute;
+	background-color: linear-gradient(to right,#8e2de2, #4a00e0);
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	opacity: 0;
+	transition: all 0.4s linear;
+}
+.box1:hover:before{
+	opacity: 1;
+}
+
+.box1 img{
+	width: 90%;
+	height: 90%;
+	transition: all 0.4s linear;
+}
+.box1:hover img{
+	opacity: 0;
+	transform: scale(3);
+}
+.box1.box-content{
+	color: #fff;
+	width:100%;
+	transform: translate(-50%) scale(0);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transition: all 0.4s linear;
+}
+
+.box1:hover .box1-content{
+	transform: translateY(-50%) scale(1);
+}
+
+.box1 .box-content .title{
+	font-size: 25px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.box1 .box-content .post{
+	font-size: 20px;
+	text-transform: capitalize;
+}
+.box1 .icon{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	position: absolute;
+	right: 8px;
+	bottom: 10px;
+
+}
+.box1 .icon li{
+	display: inline-block;
+	margin: 0 1px;
+	opacity: 0;
+	transform: scale(1.3);
+	transition: all 0.4s linear;
+}
+.box1:hover .icon li{
+	opacity: 1;
+	transform: scale(1);
+}
+.box1:hover .icon li:nth-child(2){
+	transition: all 0.3s ease 0.2s;
+
+}
+.box1:hover .icon li a{
+	color: #8e2de2;
+	background-color: #fff;
+	font-size: 16px;
+	line-height: 33px;
+	height: 33px;
+	width: 33px;
+	border-radius: 50%;
+	display:block;
+	transition: all 0.5s ease;
+
+}
+.title1{
+	position: relative;
+	top: 70px;
+	left: 38%;
+}
+.title2{
+	right: 100%;
+font-family: 'Sue Ellen Francisco', cursive;
+}
+
+.footer{
+	background: ;
+	color:white;
+	height: 400px;
+
+
+}
+
+.footer .footer-content{
+	border: 1px solid white;
+	height: 540px;
+}
+.footer .footer-bottom{
+   background: ;
+   color: white;
+   height: 50px;
+   width: 100%;
+   text-align: center;
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   padding-top: 20px;
+
+}
+.wrapper{
+	margin-top: 8em;
+}
+.service_box{
+	height: 300px;
+	color: white;
+	font-family: 'lato', sans-serif;
+	text-align: center;
+	padding: 25px 5px 30px 0;
+	box-shadow: 15px 0 15px -15px rgba(0,0,0,0.5) inset;
+	position: relative;
+}
+.service_box:after{
+	content: '';
+	background: #ff018f;
+	width:8px;
+	height:300px;
+	box-shadow: 20px 0 20px -20px rgba(0,0,0,0.5) inset;
+	position: absolute;
+	bottom: 10px;
+	left:0;
+	clip-path: polygon(0 0, 0% 100%, 100% 0);
+
+}
+.service_box.service_content{
+	padding: 15px;
+	background: linear-gradient(to left bottom, #fd9743, #ff018f);
+	border-radius: 0 30px 30px 0;
+	box-shadow: 20px 0 20px -20px rgba(0,0,0,0.5) inset;
+}
+.service_box.titl{
+	color: #ff018f;
+	background: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 15px 10px;
+	margin: 0 -20px 20px -15px;
+	border-radius: 0 30px 30px 0;
+	box-shadow: 10px 0 10px -10px rgba(0,0,0,0.5) inset,
+	5px 0 5px rgba(0,0,0,0.2);
+}
+.service_box .description{
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0 0 20px;
+}
+.service_box .service_icon{
+	color:#fff;
+	font-size:45px;
+}
+.service_box:hover .service_icon i{
+	transform: rotate(360deg);
+	transition: all 0.3s;
+}
+.service_box.blue:after{
+	background: #6558ff;
+
+}
+.service_box.blue .service_content{
+	background: linear-gradient(to left bottom, #02d7dd, #6558ff);
+}
+.service_box.blue.title{
+	color: #6558ff;
+}
+
+.service_box.blue.title{
+	color: #6558ff;
+}
+
+.service_box.purple .service_content{
+	background: linear-gradient(to left bottom, #f83abe, #910090);
+}
+.service_box.purple:after{
+	background:#910090;
+}
+.service_box.purple.title{
+	color: #910090;
+}
+
+.service_box.green .service_content{
+	background: linear-gradient(to left bottom, #02f4c1, #00ae85);
+}
+.service_box.green:after{
+	background:#00ae85;
+}
+.service_box.green.title{
+	color: #00ae85;
+}
+.Contact{
+	margin: 0;
+	padding: 0;
+height: 80%;
+	background-position: center;
+	background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(../3/hol.jpg);
+	background-size: cover;
+	font-family: sans-serif;
+	top:40%;
+}
+.contact-title{
+	margin-top: 100px;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 4s ease-in-out;
+	font-family: 'Fugaz One', cursive;
+}
+.cotact-title h1{
+	font-size: 32px;
+	line-height: 10px;
+	font-family: 'Fugaz One', cursive;
+}
+.contact-title h2{
+   font-size: 16px;
+  font-family: 'Fugaz One', cursive;
+}
+form{
+	margin-top: 50px;
+	transition: all 4s ease-in-out;
+
+}
+.form-control{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: black;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+input[type="Name"]{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: black;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+form.submit{
+	background: #ff5722;
+	border-color: transparent;
+	color: black;
+	font-size: 20px;
+	font-weight:bold;
+	letter-spacing: 2px;
+	height:50px;
+	margin-top: 20px;
+}
+
+ form.submit:hover
+ {
+ 	background-color: #f44336;
+ 	cursor: pointer;
+ }
+ body{
+ 	background-image: url(140.jpg);
+ 	background-size: cover;
+ 	background-attachment: fixed;
+ 	font-family: new time roman;
+ }
+ 
+ h3{
+ 	font-size: 25px;
+ 	color:white;
+
+ }
+ .glyphicon-pencil{
+ 	font-size: 35px;
+ 	color: white;
+ 	float: right;
+ 	margin-top: 20px;
+ }
+ .col-md-5{
+ 	margin-top: 80px;
+ 	box-shadow: -1px 1px 60px 10px black;
+ 	background: rgba(0,0,0,0.4);
+ }
+ .label{
+ 	font-weight: normal;
+ 	margin-top: 15px;
+ 	color: white;
+ 	font-size: 19px;
+
+ }
+ .form-control{
+ 	background: transparent;
+ 	border-radius:0px;
+ 	border: 0px;
+ 	border-bottom: 1px solid white;
+ 	font-size:18px;
+ 	margin-top: 15px;
+ 	height: 40px;
+ }
+ input[type="checkbox"]{
+ 	margin-top: 15px;
+ 	width: 15px;
+ 	height: 15px;
+ }
+ small{
+ 	font-size:18px;
+ 	color:white;
+ }
+ input[type="radio"]{
+ 	margin-top: 22px;
+ }
+ option{
+ 	color:gray;
+ }
+ .btn-info{
+ 	margin-top: 20px;
+ 	font-size: 18px;
+ 	width: 120px;
+ 	margin-left: 90px;
+ 	margin-bottom: 20px;
+ }
+ .btn-warning{
+ 	margin-top: 20px;
+ 	font-size: 18px;
+ 	width: 120px;
+ 	margin-left: 80px;
+ 	margin-bottom: 20px;
+ }

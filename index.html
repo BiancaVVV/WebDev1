@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>Webdev creations</title>
+<link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Satisfy&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript"></script>
+</head>
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<img src="logo.png">
+			</div>
+			<nav>
+			<ul>
+				 <li><a href="#"><a href ="index.html">Home</a></li>
+				 <li><a href="#"><a href="Services.html">Services</a></li>
+				 <li><a href="#"><a href="Galery.html">Galery</a></li>
+				 <li><a href="#"><a href="About.html">About</a></li>
+				 <li><a href="#"><a href ="Contact.html">Contact</a></li>
+				 <li><i class="fa fa-unlock-alt"></i><a href="#" id="login">Login</a> 
+				 <li><i class="fa fa-unlock-alt"></i><a href="#" id="register"><a href="Register.html">Register</a>
+
+				 <li>
+				 	<section class="nav-container">
+				 	<aside class="logo"></aside>
+				 	<aside class="menu">
+				 		<div class="menu-content">
+				 			
+		               <div class="arrow-up"></div>
+		               <div class="arrow-up2"></div>
+				 	</aside>
+				 	<div class="login-form">
+				 		<form>
+				 			<label>Username</label>
+				 		<div>
+				 			<input type="text" placeholder="Username" required/>
+				 		</div>
+				 		<label>Password</label>
+				 		<div>
+				 			<input type="password" placeholder="Passowrd" required/>
+				 		</div>
+                   <div>
+                   	<input type="submit" value="Log In"/>
+                   </div>
+                   <div><ul>
+                   	 <a href="#" style="text-decoration: none;position: relative;margin-top: 20px;padding:0;background-color:transparent;font-size: 19px;color:gray;">Lost Your Password</a></ul>
+                   
+			</div>
+				 </section>
+
+				
+		</nav>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var arrow= $(".arrow-up");
+				var form= $(".login-form");
+				var status=false;
+					$("#login").click(function(event){
+						event.preventDefault();
+						if(status==false){
+							arrow.fadeIn();
+							form.fadeIn();
+							status=true;
+						}else{
+							arrow.fadeOut();
+							form.fadeOut();
+							status=false;
+						}
+						
+					})
+			})
+		</script>
+			</div>
+			<div class="title">
+				<h1>Yachts for renting</h1>
+			</div>
+			<div class="button">
+				<a href="#" class="btn">Watch videos</a>
+				<a href="#" class="btn">Read more about us</a>
+			</div>
+			 <!--//footer-->
+        <div class="footer">
+        	<div class="footer-content">
+        		<div class="footer section about"></div>
+        		<div class="footer section link"></div>
+        		<div class="footer section contact-form"></div>
+        		<div class="footer section about"></div>
+        	</div>
+        	<div class="footer-bottom">
+        		&copy: codingpoets.com | Designed by Veleanu Bianca
+		</header>
+	</body>
+	</html>

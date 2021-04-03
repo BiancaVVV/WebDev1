@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/Bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="js/Bootstrap.js">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Bootstrap registration form</title>
+</head>
+<style type="text/css">
+	.form-control{
+	width: 400px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: black;
+	font-size: 18px;
+	margin-bottom: 16px;
+	position: center;
+}
+input[type="Name"]{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: black;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+form.submit{
+	background: #ff5722;
+	border-color: transparent;
+	color: black;
+	font-size: 20px;
+	font-weight:bold;
+	letter-spacing: 2px;
+	height:50px;
+	margin-top: 20px;
+	position: inherit;
+}
+
+ form.submit:hover
+ {
+ 	background-color: #f44336;
+ 	cursor: pointer;
+ }
+ body{
+ 	background-image: url(140.jpg);
+ 	background-size: cover;
+ 	background-attachment: fixed;
+ 	font-family: new time roman;
+ }
+ h1{
+ 	font-size: 40px;
+ 	color: white;
+   
+ 	
+ }
+ p{
+ 	font-size: 17px;
+ 	color:white;
+ }
+ h3{
+ 	font-size: 25px;
+ 	color:white;
+
+ }
+ .glyphicon-pencil{
+ 	font-size: 35px;
+ 	color: white;
+ 	float: right;
+ 	margin-top: 20px;
+ }
+ .col-md-5{
+ 	margin-top: 80px;
+ 	box-shadow: -1px 1px 60px 10px black;
+ 	background: rgba(0,0,0,0.4);
+ }
+ .label{
+ 	font-weight: normal;
+ 	margin-top: 15px;
+ 	color: white;
+ 	font-size: 19px;
+ 	position: center;
+
+ }
+ .form-control{
+ 	background: transparent;
+ 	border-radius:0px;
+ 	border: 0px;
+ 	border-bottom: 1px solid white;
+ 	font-size:18px;
+ 	margin-top: 15px;
+ 	height: 40px;
+ 	position: center;
+ }
+ input[type="checkbox"]{
+ 	margin-top: 15px;
+ 	width: 15px;
+ 	height: 15px;
+ }
+ small{
+ 	font-size:18px;
+ 	color:white;
+ }
+ input[type="radio"]{
+ 	margin-top: 22px;
+ }
+ option{
+ 	color:gray;
+ }
+ .btn-info{
+ 	margin-top: 20px;
+ 	font-size: 18px;
+ 	width: 120px;
+ 	margin-left: 8px;
+ 	margin-bottom: 20px;
+ 	  background-color: #5bc9de;
+  border: none;
+  color: white;
+  padding: 10px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+ }
+ .btn-warning{
+ 	margin-top: -41px;
+ 	font-size: 18px;
+ 	width: 120px;
+ 	margin-left: 70px;
+ 	margin-bottom: 200px;
+   background-color: #5bc9de;
+  border: none;
+  color: white;
+  padding: 10px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+ }
+</style>
+<body>
+	<div class="container0">
+		<div class="row0">
+			<div class="col-md-7">
+				<h1 class="text-left">Registration form</h1>
+				<p class="text-left"></p>
+			</div>
+			<div class="col-md-5"></div>
+			<div class="row0">
+				<div class="col-md-6">
+					<h3 class="text-left"></h3>
+				</div>
+				<div class="col-md-6">
+					<span class="glyphicon glyphicon-pencil"></span></div>
+				</div>
+				<br>
+				<div class="row0">
+					<label class="label col-md-2 control-label">Email</label>
+					<div class="col-md-10">
+						<input type="Email"class="form-control" name="Email" placeholder="Email">
+			</div>
+		</div>
+		<div class="row0">
+					<label class="label col-md-2 control-label">Password</label>
+					<div class="col-md-10">
+						<input type="Password"class="form-control" name="Password" placeholder="Password"><br>
+						<input type="checkbox"><small>Remember me</small>
+			</div>
+		</div>
+		<div class="row0">
+					<label class="label col-md-2 control-label">Message</label>
+					<div class="col-md-10">
+						<div class="col-md-10">
+							<textarea class="form-control"></textarea>
+						</div>
+					</div>
+					<div class="row0">
+						<label class="label col-md-2 control-label">Gender</label>
+						<div class="col-md-10">
+							<input type="radio" name="gn" value="male"><small>Male</small>
+							<input type="radio" name="gn" value="male"><small>Female</small>
+						</div>
+			</div>
+			<div class="row0">
+				<label class="label col-md-2 control-label">Country</label>
+				<div class="col-md-10">
+					<select class="form-control">
+						<option>USA</option>
+						<option>France</option>
+						<option>Turkish</option>
+						<option>Italy</option>
+						<option>Germany</option>
+					</select>
+		</div>
+	</div>
+	<a href="#"><div class="btn btn-info">Submit</div></a>
+	<a href="#"><div class="btn btn-warning">Cancel</div></a>
+</div>
+</body>
+	</div></div></body></html>
